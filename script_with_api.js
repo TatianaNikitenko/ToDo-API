@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const newTodo = {
             title: text,
-            description: "default",
+            description: `Task: ${text}`,
             dueDate: new Date().toISOString(),
             status: "PENDING",
             priority: 2
