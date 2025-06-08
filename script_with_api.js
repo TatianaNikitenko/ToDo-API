@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             li.innerHTML = `
                 <input type="checkbox" ${todo.status === 'DONE' ? 'checked' : ''} data-id="${todo.id}">
-                <span class="todo-text">${todo.title}</span>
+                <span class="todo-text">${todo.title || todo.text || 'Untitled Task'}</span>
                 <button class="delete-btn" data-id="${todo.id}">Delete</button>
             `;
 
